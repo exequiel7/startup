@@ -8,7 +8,7 @@ body {
 	font-family: sans-serif;
 }
 
-#contentInput {
+#contentInput, #message {
 	box-sizing: border-box;
 	background: #f9f9f9;
 	padding: .5rem;
@@ -18,7 +18,7 @@ body {
 	color: #202020;
 }
 
-#saveButton, #clearButton{
+#saveButton, #clearButton, #sendButton{
 	-webkit-appearance: none;
 	border: 0;
 	background: #0088ff;
@@ -31,4 +31,8 @@ body {
 
 #clearButton{
     background: #CD5C5C;
+}
+
+#sendButton{
+    background: #00FF00;
 }

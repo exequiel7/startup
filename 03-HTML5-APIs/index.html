@@ -13,7 +13,16 @@
         <button id="saveButton">Save</button>
         <button id="clearButton">Clear</button>
     </section>
+    <br><br>
+    <section>
+        <textarea id="message" placeholder="WebSocket"></textarea>
+        <button id="sendButton" onclick="testWebSocket(message.value)">Send</button>
+        <div id="output">
+
+        </div>
+    </section>
     <script src="js/storage.js"></script>
     <script src="js/drag&drop.js"></script>
+    <script src="js/webSocket.js"></script>
 </body>
 </html>
