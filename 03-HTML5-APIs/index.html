@@ -9,10 +9,11 @@
 </head>
 <body>
     <section>
-        <textarea name="contentInput" id="contentInput" placeholder="Your text here"></textarea>
+        <textarea name="contentInput" id="contentInput" placeholder="Your text here or drop a file" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);"></textarea>
         <button id="saveButton">Save</button>
         <button id="clearButton">Clear</button>
     </section>
     <script src="js/storage.js"></script>
+    <script src="js/drag&drop.js"></script>
 </body>
 </html>
