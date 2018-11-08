@@ -6,8 +6,7 @@ class CreateMovie extends Component {
         this.state={
             title: '',
             year: '',
-            duration: '',
-            message: ''
+            duration: ''
         };
         this.handleInputChange = this.handleInputChange.bind(this);
         this.addMovie = this.addMovie.bind(this);
@@ -34,25 +33,19 @@ class CreateMovie extends Component {
                     duration: ''
                     });
                 } else{
-                    this.setState({
-                        message: 'No added duration.'
-                    })
+                        alert("No added duration");
                 }
             } else{
-                this.setState({
-                    message: 'No added year.'
-                })
+                alert("No added year");
             }
         } else{
-            this.setState({
-                message: 'No added title.'
-            })
+            alert("No added title");
         } 
     }
     
     render() {
     return (
-        <div className="movies">
+        <div className="CreateMovie">
             <header>
                 <h1>My Movies</h1>
                     <div className="form-group">

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import CreateMovie from './Components/createMovie';
+import MovieList from './Components/movieList';
 
 class App extends Component {
   constructor(){
@@ -32,15 +33,15 @@ class App extends Component {
         movies : [...this.state.movies, newMovie]
       });
     } else {
-      alert('The movie '+newMovie.title+' already exists!');
+      alert('The movie already exists!');
     } 
   }
 
   render() {
     return (
       <div className="App">
-        
         <CreateMovie addMovie ={this.addMovie}/>
+        <MovieList movies = {this.state.movies} />
       </div>
     );
   }
