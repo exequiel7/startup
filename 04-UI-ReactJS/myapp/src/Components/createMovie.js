@@ -61,8 +61,8 @@ class CreateMovie extends Component {
                             Movie duration: 
                             <input type="text"name="duration" value={this.state.duration} onChange={this.handleInputChange} />
                         </label>
+                        <button type="submit" className="btn add" onClick={this.addMovie}>Add</button>
                     </div>
-                    <button type="submit" className="btn add" onClick={this.addMovie}>Add</button>
             </header>
         </div>
     );

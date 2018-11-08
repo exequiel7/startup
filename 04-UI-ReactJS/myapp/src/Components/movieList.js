@@ -19,9 +19,9 @@ class MovieList extends Component {
                     <caption>Movies</caption>
                     <thead>
                         <tr>
-                            <th>Title</th>
-                            <th>Year</th>
-                            <th>Duration</th>
+                            <th className="tr">Title</th>
+                            <th className="tr">Year</th>
+                            <th className="tr">Duration</th>
                         </tr>
                     </thead>
                     <tbody>
