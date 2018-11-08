@@ -7,14 +7,14 @@
   height: 40vmin;
 }
 
-.App-header {
+.App-header, header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 68vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
   color: white;
 }
 
@@ -30,6 +30,7 @@
     transform: rotate(360deg);
   }
 }
+
 
 .btn{
   -webkit-appearance: none;
@@ -56,7 +57,7 @@
 .table{
   width: 80%;
   margin-left: 5rem;
-  
+  margin: auto auto 4rem auto; 
 }
 
 .content{
