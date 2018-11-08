@@ -5,15 +5,16 @@ import MovieList from './Components/movieList';
 
 class App extends Component {
   constructor(){
-    super();
-    this.addMovie = this.addMovie.bind(this);
-    this.checkIfExist = this.checkIfExist.bind(this);
+    super();  
     this.state = { 
       movies: [
         {title:"Jurassic World",year:"2015", duration:"124"}
       ],
       isOpen: false
     };
+    this.addMovie = this.addMovie.bind(this);
+    this.checkIfExist = this.checkIfExist.bind(this);
+    this.removeMovie = this.removeMovie.bind(this);
   }
 
   checkIfExist(movie){
@@ -37,11 +38,20 @@ class App extends Component {
     } 
   }
 
+  removeMovie(movie){
+    let movieList = this.state.movies.filter(mov => {
+      if(mov.title !== movie.title){
+        return mov;
+      }
+    });
+    this.setState({ movies: movieList})
+  }
+
   render() {
     return (
       <div className="App">
         <CreateMovie addMovie ={this.addMovie}/>
-        <MovieList movies = {this.state.movies} />
+        <MovieList movies = {this.state.movies} removeMovie = {this.removeMovie}/>
       </div>
     );
   }

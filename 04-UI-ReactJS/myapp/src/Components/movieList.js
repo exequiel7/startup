@@ -6,15 +6,9 @@ class MovieList extends Component {
         super();
         this.renderDynamic = this.renderDynamic.bind(this);
     }
-
     renderDynamic(movies){
         return movies.map(movie => (
-            <tr Movie key = {movie.title} title = {movie.title} year = {movie.year} duration = {movie.duration}>
-                <th scope="row"></th>
-                <td>{movie.title}</td>
-                <td>{movie.year}</td>
-                <td>{movie.duration}</td>
-            </tr>
+            <Movie key = {movie.title} title = {movie.title} year = {movie.year} duration = {movie.duration} removeMovie = {this.props.removeMovie}/>
         ));
     }
 
@@ -25,8 +19,7 @@ class MovieList extends Component {
                     <caption>Movies</caption>
                     <thead>
                         <tr>
-                            <th>#</th>
-                            <th>Tittle</th>
+                            <th>Title</th>
                             <th>Year</th>
                             <th>Duration</th>
                         </tr>
