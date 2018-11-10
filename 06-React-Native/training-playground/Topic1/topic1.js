@@ -7,13 +7,10 @@ export default class Topic1 extends React.Component {
         <View style={styles.container}>
         <ScrollView style={{height:'100%', width:'100%'}}>
             <View style={styles.top}>
-                <View style={styles.profileimage}>
-                {/*<Image
-                    style={{position:'relative'}}
+                <Image
+                    style={styles.profileimage}
                     source={require('./pngtree.png')}
                 />
-                */}
-                </View>
             </View>
 
             <View style={styles.center}></View>
@@ -100,7 +97,7 @@ const styles = StyleSheet.create({
     },
     
     center:{
-        height:'10%',
+        height:'5%',
         backgroundColor: '#7fbcac'
     },
     
