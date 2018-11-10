@@ -1,0 +1,11 @@
+node_modules/**/*
+.expo/*
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
+../../../00-HTML-CSS-basics/.gitignore
+../../../02-OOP-inheritance/node_modules/
+../../../03-HTML5-APIs/debug.log
+../../../04-UI-ReactJS/myapp/
